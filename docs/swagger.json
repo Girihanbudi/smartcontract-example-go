@@ -1,0 +1,31 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This backend service content a definition for filesystem using smart contract",
+        "title": "Smartm2m Technical API",
+        "contact": {
+            "name": "API Support",
+            "email": "ghanbudi@gmail.com"
+        },
+        "version": "1.0"
+    },
+    "host": "localhost",
+    "paths": {
+        "/filesytem": {
+            "get": {
+                "tags": [
+                    "filesytem"
+                ],
+                "summary": "Download file from smart contract.",
+                "responses": {}
+            },
+            "post": {
+                "tags": [
+                    "filesytem"
+                ],
+                "summary": "Upload file to smart contract.",
+                "responses": {}
+            }
+        }
+    }
+}

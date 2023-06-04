@@ -1,0 +1,22 @@
+host: localhost
+info:
+  contact:
+    email: ghanbudi@gmail.com
+    name: API Support
+  description: This backend service content a definition for filesystem using smart
+    contract
+  title: Smartm2m Technical API
+  version: "1.0"
+paths:
+  /filesytem:
+    get:
+      responses: {}
+      summary: Download file from smart contract.
+      tags:
+      - filesytem
+    post:
+      responses: {}
+      summary: Upload file to smart contract.
+      tags:
+      - filesytem
+swagger: "2.0"

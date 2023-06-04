@@ -1,5 +1,16 @@
 # smartm2m-technical-test
+
+## Brief Description
+This repository contain a sample API to manage file with smart contract. Visit [Postman documentation](https://documenter.getpostman.com/view/7070614/2s93sW9vXb) to seek a sample API request definition for test.
+
  
+## Download
+Download this repository using git
+
+```bash
+  git clone https://github.com/Girihanbudi/smartm2m-technical-test.git
+```
+
 ## Installation
 
 1. Install all required dependencies in project using command :

@@ -22,3 +22,6 @@ go.work
 
 # ignore env
 env/config.yaml
+
+# ignore ganache data
+ganache_data

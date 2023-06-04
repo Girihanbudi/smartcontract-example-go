@@ -1,9 +1,0 @@
-stage:
-origins:
-domain:
-creds:
-  privatekey:
-  publiccert:
-httpserver:
-  host:
-  port:

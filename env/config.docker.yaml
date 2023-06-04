@@ -1,0 +1,16 @@
+stage: "local"
+origins: ["http://0.0.0.0"]
+domain: "0.0.0.0"
+creds:
+  privatekey: ""
+  publiccert: ""
+httpserver:
+  host: "0.0.0.0"
+  port: "8081"
+ethclient:
+  host: "http://host.docker.internal:8545"
+  smartcontractholder: "03af29fc0ada658eae910100911c47d1c1ec11555359fc8f9aba2c9c2682f2c0"
+  smartcontractaddress: "0x6d16f98C1fa5fCB05C1992da78564B29700F358D"
+  defaultfund: 0
+  defaultgaslimit: 6721975
+  defaultgasprice: 20000000000

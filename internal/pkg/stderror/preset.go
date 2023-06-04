@@ -2,8 +2,17 @@ package stderror
 
 import "net/http"
 
-var (
-	ErrBadRequest          = New(http.StatusBadRequest, "Not valid request")
-	ErrInternalServerError = New(http.StatusBadRequest, "Internal server error")
-	ErrServiceUnavailable  = New(http.StatusServiceUnavailable, "Server is unavailable")
-)
+func ErrBadRequest() *StdError {
+	err := New(http.StatusBadRequest, "Not valid request")
+	return &err
+}
+
+func ErrInternalServerError() *StdError {
+	err := New(http.StatusInternalServerError, "Internal server error")
+	return &err
+}
+
+func ErrServiceUnavailable() *StdError {
+	err := New(http.StatusServiceUnavailable, "Server is unavailable")
+	return &err
+}

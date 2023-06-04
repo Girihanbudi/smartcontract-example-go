@@ -6,8 +6,8 @@ import (
 )
 
 type StdInvalidParams struct {
-	Name   string `json:"name"`
-	Reason string `json:"reason"`
+	Name   string `json:"name,omitempty"`
+	Reason string `json:"reason,omitempty"`
 }
 
 type StdError struct {
@@ -47,19 +47,17 @@ func (e *StdError) New(link, title string, err ...any) *StdError {
 }
 
 func (e *StdError) SetError(err error) *StdError {
-	newError := *e
-	newError.Error = err
-	return &newError
+	e.Error = err
+	e.Title = err.Error()
+	return e
 }
 
 func (e *StdError) SetErrorFromString(message string) *StdError {
-	newError := *e
-	newError.Error = errors.New(message)
-	return &newError
+	e.Error = errors.New(message)
+	return e
 }
 
 func (e *StdError) AddErrors(err ...any) *StdError {
-	newError := *e
-	newError.Errors = append(e.Errors, err...)
-	return &newError
+	e.Errors = append(e.Errors, err...)
+	return e
 }

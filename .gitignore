@@ -25,3 +25,6 @@ env/config.yaml
 
 # ignore ganache data
 ganache_data
+
+# ignore temporary file
+tmp

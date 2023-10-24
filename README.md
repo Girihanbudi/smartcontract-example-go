@@ -1,7 +1,7 @@
-# smartm2m-technical-test
+# smartcontract-example-go
 
 ## Brief Description
-This repository contain a sample API to manage file with smart contract. Visit [Postman documentation](https://documenter.getpostman.com/view/7070614/2s93sW9vXb) to seek a sample API request definition for test.
+This repository contain a sample API to manage file with smart contract with Go Language. Visit [Postman documentation](https://documenter.getpostman.com/view/7070614/2s93sW9vXb) to seek a sample API request definition for test.
 
  
 ## Download
